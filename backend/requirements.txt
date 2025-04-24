@@ -1,0 +1,43 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-functions
+langchain==0.3.0
+langchain-core>=0.3.29,<0.4.0
+langchain-openai==0.3.0
+langgraph>=0.0.20
+nest-asyncio>=1.5.8
+IPython>=8.12.0
+aiomysql==0.2.0
+python-dotenv==1.0.0
+fastapi==0.109.0
+uvicorn==0.27.0
+pydantic>=2.7.4
+pydantic-settings>=2.0.0  # Add this line to fix the error
+asyncio==3.4.3
+python-multipart==0.0.6
+requests>=2.31.0
+pytz
+python-docx>=0.8.11
+pandas>=2.2.0
+
+## OpenAI y Agent
+msal==1.26.0
+openai>=1.68.2,<2.0.0
+tiktoken>=0.7,<1.0
+
+## Database
+PyMySQL==1.1.0
+cryptography==41.0.7
+
+## Testing 
+pytest==7.4.3
+
+## API Framework
+httpx==0.26.0
+starlette==0.35.1
+
+## Utilities
+colorlog==6.7.0
+pyjwt==2.8.0
