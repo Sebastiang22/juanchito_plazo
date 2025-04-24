@@ -127,5 +127,6 @@ def create_tables():
             print("MySQL connection closed")
 
 
+
 if __name__ == "__main__":
     create_tables()
